@@ -1,17 +1,12 @@
 
 
 
+// let theButton = document.querySelector('#myBtn');
+// theButton.addEventListener('click',pressClear);
 
-let theButton = document.querySelector('#myBtn');
-theButton.addEventListener('click',pressClear);
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("p").hide();
+    });
+});
 
-
-
-function pressClear() {
-    console.log('clicked');
-    $(document).ready(function(){
-        $("button").click(function(){
-          $("p").hide();
-        });
-      });
-}
